@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Civitas
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    #logo
+      = image_tag 'logo.jpg', size: '300x150'
+    #menu
+      %ul
+        %li= link_to 'O nas'
+        %li= link_to 'Zarządzanie najmem'
+        %li= link_to 'Oferty'
+        %li= link_to 'Usługi'
+        %li= link_to 'Kontakt'
+    = yield
+    #footer Łukasz Wojtczak Nieruchomości Civitas-Poznan
