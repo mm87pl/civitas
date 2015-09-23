@@ -8,13 +8,16 @@
     = csrf_meta_tags
   %body
     #logo
-      = image_tag 'logo.jpg', size: '300x150'
+      .container
+        = image_tag 'logo.jpg', size: '300x150'
     #menu
-      %ul
-        %li= link_to 'O nas'
-        %li= link_to 'Zarządzanie najmem'
-        %li= link_to 'Oferty'
-        %li= link_to 'Usługi'
-        %li= link_to 'Kontakt'
+      .container
+        %ul
+          %li= link_to 'O nas'
+          %li= link_to 'Zarządzanie najmem'
+          %li= link_to 'Oferty'
+          %li= link_to 'Usługi'
+          %li= link_to 'Kontakt'
     = yield
-    #footer Łukasz Wojtczak Nieruchomości Civitas-Poznan
+    #footer
+      .container Łukasz Wojtczak Nieruchomości Civitas-Poznan

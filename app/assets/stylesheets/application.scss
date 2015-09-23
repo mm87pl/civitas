@@ -16,3 +16,17 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+#menu {
+  background: lightskyblue;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+}
+
+#footer {
+  background: lightgray;
+}
