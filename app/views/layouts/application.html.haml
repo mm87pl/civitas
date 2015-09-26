@@ -7,17 +7,23 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    #logo
-      .container
-        = image_tag 'logo.jpg', size: '300x150'
     #menu
       .container
+        .logo= link_to((image_tag 'logo.png'), root_path)
         %ul
-          %li= link_to 'O nas'
-          %li= link_to 'Zarządzanie najmem'
-          %li= link_to 'Oferty'
-          %li= link_to 'Usługi'
-          %li= link_to 'Kontakt'
+          %li.first{class: ('active' if params[:action] == 'about')}= link_to 'O nas', about_path
+          %li{class: ('active' if params[:action] == 'about')}= link_to 'Zarządzanie najmem'
+          %li{class: ('active' if params[:action] == 'offers')}= link_to 'Oferty'
+          %li{class: ('active' if params[:action] == 'services')}= link_to 'Usługi'
+          %li{class: ('active' if params[:action] == 'contact')}= link_to 'Kontakt'
     = yield
     #footer
-      .container Łukasz Wojtczak Nieruchomości Civitas-Poznan
+      .container
+        %ul.social
+          %li
+            %i.fa.fa-facebook
+          %li
+            %i.fa.fa-twitter
+          %li
+            %i.fa.fa-linkedin
+        %span Łukasz Wojtczak Nieruchomości Civitas-Poznan

@@ -1,19 +1,58 @@
-#slider slider(to do)
+#slider
+  .container
+    .slide
+
+#motto
+  .container
+    .text
+      %h2 Magna sed consequat ligula
+      %p Sem nristiue onec tuis dui at dolor tempor intlorem ipsum laoreet
 
 #icons
   .container
     %ul
-      %li
-        %div icon1
-      %li
-        %div icon2
-      %li
-        %div icon3
-      %li
-        %div icon4
+      %li.col-lg-4
+        %div
+          %i.fa.fa-home
+          %h2 Lorem
+          %span Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Phasellus hendrerit. Pellensque aliquet nibh.
+      %li.col-lg-4
+        %div
+          %i.fa.fa-briefcase
+          %h2 Lorem
+          %span Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Phasellus hendrerit. Pellensque aliquet nibh.
+      %li.col-lg-4
+        %div
+          %i.fa.fa-dollar
+          %h2 Lorem
+          %span Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Phasellus hendrerit. Pellensque aliquet nibh.
 
 #offers
-  .container ostatnie 3 oferty
+  .container
+    .last-offers
+      .left.col-lg-6
+        %h3 Ostatno dodane oferty
+        %ul
+          %li.first
+            %span Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Phasellus hendrerit. Pellensque aliquet nibh.
+            %i.fa.fa-arrow-right
+          %li
+            %span Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Phasellus hendrerit. Pellensque aliquet nibh. Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Phasellus hendrerit. Pellensque aliquet nibh.
+            %i.fa.fa-arrow-right
+          %li
+            %span Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Phasellus hendrerit. Pellensque aliquet nibh. Lorem ipsum dolor sit amet, consecetuer adipiscing elit.
+            %i.fa.fa-arrow-right
+      .right.col-lg-6
+        %h3 Oferta
+        %ul
+          %li
+            .img{style: "background: url(#{image_path"home1.jpg"}) 50% 50% / cover no-repeat"}
+            %p.description Lorem ipsum dolor sit amet, consecetuer adipiscing elit.
+          %li
+            .img{style: "background: url(#{image_path"home2.jpg"}) 50% 50% / cover no-repeat"}
+            %p.description Phasellus hendrerit. Pellensque aliquet nibh.
+          %li
+            .img{style: "background: url(#{image_path"home3.jpg"}) 50% 50% / cover no-repeat"}
+            %p.description Pellensque aliquet nibh. Lorem ipsum dolor sit amet, consecetuer adipiscing elit. Pellensque aliquet nibh. Lorem ipsum dolor sit amet, consecetuer adipiscing elit.
 
-#motto
-  .container motto
+

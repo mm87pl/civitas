@@ -3,22 +3,122 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #slider {
-  background: lightgrey;
+  .slide {
+    background: url(slide.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 500px;
+  }
+}
+
+#motto {
+  .text {
+    min-height: 130px;
+    text-align: center;
+    background: #fff;
+    h2 {
+      margin: 0 10px;
+      padding: 25px 0 0;
+      font-size: 35px;
+      font-weight: 700;
+    }
+    p {
+      color: #666;
+      padding: 15px 10px;
+      margin: 0 10px;
+      font-size: 19px;
+    }
+  }
 }
 
 #icons {
+  background: #dc5f55;
   ul {
-    padding: 0;
     font-size: 0;
     text-align: center;
     li {
       font-size: initial;
       display: inline-block;
-      width: 50%;
-      margin: 10px 0;
+      background: #f2695f;
+      padding: 50px;
       div {
         margin: 5px;
-        background: greenyellow;
+        color: #fff;
+        transition: 0.5s;
+        i {
+          font-size: 30px;
+          background: #dc5f55;
+          padding: 13px;
+          min-width: 55px;
+          min-height: 55px;
+          border-radius: 50%;
+          transition: 0.3s;
+        }
+        h2 {
+          transition: 0.3s;
+        }
+        span {
+          font-weight: 300;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+#offers {
+  .last-offers {
+    background: #fff;
+    min-height: 360px;
+    margin: 0 0 30px;
+    padding: 15px 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .left {
+      ul {
+        li {
+          position: relative;
+          padding: 20px 0 0;
+          margin: 20px 0;
+          i {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            opacity: 0;
+            font-size: 20px;
+            transition: 0.5s;
+          }
+          &:hover i {
+            opacity: 1;
+            right: -45px;
+          }
+          &:not(.first) {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+    .right {
+      ul {
+        position: relative;
+        overflow: hidden;
+        height: 280px;
+        width: 350px;
+        margin: 0 auto;
+        li {
+          position: absolute;
+          &:not(:first-child) {
+            display: none;
+          }
+          .img {
+            height: 200px;
+            width: 350px;
+          }
+          p {
+            margin: 15px 0;
+          }
+        }
       }
     }
   }
