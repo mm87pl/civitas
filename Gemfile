@@ -32,6 +32,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'simple_form'
+gem 'rails_admin'
+gem 'devise'
 gem "haml-rails", "~> 0.9"
 gem 'font-awesome-sass', '~> 4.4.0'
 

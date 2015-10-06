@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  devise_for :admins
+
+  get 'panel/index', to: 'offers#index'
+
+  resources :panel, :controller=>"offers"
+  post 'panel/new', to: 'offers#create'
+
   root 'public#index'
 
   get 'about' => 'public#about'

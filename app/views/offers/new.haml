@@ -1,0 +1,17 @@
+%h2 Dodaj ofertę
+
+= simple_form_for new_panel_path do |f|
+  = f.input :description, label: 'Opis'
+  = f.input :price, label: 'Cena'
+  = f.input :area, label: 'Wielkość'
+  = f.input :floor, label: 'Piętro'
+  = f.input :rooms, label: 'Liczba pokoi'
+  = f.input :condiction, collection: ["Nowe","Używane"], label: 'Stan'
+  = f.input :offer_type, collection: ["Kamienica","Apartament", "Blok", "Dom"], label: 'Typ oferty'
+  = f.submit
+
+
+
+
+
+

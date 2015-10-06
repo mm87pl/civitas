@@ -1,0 +1,9 @@
+%h2 Panel administracyjny
+
+=link_to 'Dodaj ofertę', new_panel_path
+
+%ul
+  - @offers.each do |offer|
+    %li
+      %h2= offer.offer_type
+      %p= offer.description
